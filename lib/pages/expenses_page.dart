@@ -11,8 +11,16 @@ class ExpensesPage extends StatefulWidget {
 
 class _ExpensesPageState extends State<ExpensesPage> {
   List<Expense> expenses = [
-    Expense(name: "Yemek", price: 500, date: DateTime.now()),
-    Expense(name: "Udemy Kursu", price: 200, date: DateTime.now()),
+    Expense(
+        name: "Yemek",
+        price: 500,
+        date: DateTime.now(),
+        category: Category.food),
+    Expense(
+        name: "Udemy Kursu",
+        price: 200,
+        date: DateTime.now(),
+        category: Category.work),
   ];
 
   @override
